@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" oncontextmenu="return false">
+
+<head>
+    <!--- basic page setup and requirements ======================= -->
+    <meta charset="utf-8">
+    <title>Parsa Salahshori-a | Portfolio Website</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- metas - mobile specific ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Typewriting title animation CSS -->
+        <style>
+            transparent #container {
+                text-align: left;
+                min-height: 105px;
+            }
+        
+            #text {
+                font-family: "librebaskerville-bold", serif;
+                display: inline-block;
+                vertical-align: middle;
+                color: #ffffff;
+                font-size: 3rem;
+                text-rendering: optimizeLegibility;
+            }
+        
+            #cursor {
+                display: inline-block;
+                vertical-align: middle;
+                width: 5px;
+                height: 5rem;
+                background-color: #00316E;
+                -webkit-animation-animation: blink .65s step-end infinite;
+                text-rendering: optimizeLegibility;
+            }
+        
+            @keyframes blink {
+                from,
+                to {
+                    background-color: rgba(244, 239, 231, 0.389);
+                }
+        
+                50% {
+                    background-color: #00316E;
+                }
+            }
+
+            @media only screen and (max-width: 450px) {
+                #text {
+                    font-size: 1.5rem;
+                }
+        
+                #cursor {
+                    height: 1.7rem;
+                }
+            }
+        
+            @media only screen and (max-width: 600px) {
+        
+                #text {
+                    font-size: 1.7rem;
+                }
+        
+                #cursor {
+                    height: 2rem;
+                }
+            }
+        
+            @media only screen and (max-width: 800px) {
+                #text {
+                    font-size: 2rem;
+                }
+        
+                #cursor {
+                    height: 2.5rem;
+                }
+            }
+        </style>
+
+    <!-- JS ================================================== -->
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+      
+    <!--favicon ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+            
+</head>
+
+
+
+<body id="top">
+<!-- Header sections ============================ -->
+    <header class="s-header">
+
+      <a class="header-logo" href="#home" title="homepage">Parsa Salahshori-a</a>
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+
+                <li class="current"><a class="smoothscroll" href="#home" title="home">
+                        <div class="zoom">Home</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#about" title="about">
+                        <div class="zoom">About</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#experience" title="experience">
+                        <div class="zoom">Experience</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#blog" title="orihects">
+                        <div class="zoom">Works</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#contact" title="contact">
+                        <div class="zoom">Contact</div>
+                    </a></li>
+
+                <li><a class="smoothscroll" href="#works" title="creative">
+                        <div class="zoom">Extra</div>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header>
+<!-- end s-header -->
+
+
+
+<!-- HOME Section ============================== -->
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
+        data-image-src="images/frontpage.mp4" data-natural-width="3000" data-natural-height="2000"
+        data-position-y="top">
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content" data-image-src="images/frontpage.mp4">
+            <div class="row home-content__main">
+
+                <div class="profile-image scroll-reveal-paragraph">
+                    <img src="images/profile-circle.jpg" alt="Profile Pic">
+                </div>
+
+                <div>
+                    <h3>
+                        <font class = "zoom-profile scroll-reveal-title" color="#FAFAFA">Portfolio</font>
+                    </h3><br>
+                </div>
+
+                <div id="container" class = "scroll-reveal-paragraph">
+                    <br><font color="#FAFAFA">
+                        <div id="text"></div>
+                        <div id="cursor"></div>
+                    </font>
+                </div><br>
+
+                
+                <div class="home-content__buttons">
+                    <div class = "zoom"> 
+                        <a class="btn btn--stroke scroll-reveal-paragraph" target="_blank" href="/Parsanguyenresume.pdf">Résumé</a> 
+                    </div>
+
+                    <div class="zoom">
+                        <a href="#experience" class="smoothscroll btn btn--stroke  scroll-reveal-paragraph">Experience</a>
+                    </div>
+                    
+                    <div class="zoom">
+                        <a class="btn btn--stroke scroll-reveal-paragraph" target="_blank" href="https://github.com/thedigitalchief">Projects</a> 
+                    </div>
+                </div>
+
+
+                <div class="home-content__scroll arrow-bounce">
+                    <a href="#about" class="scroll-link smoothscroll zoom-profile">
+                        <span>Continue</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- end HOME-content -->
+
+        <!-- original title: <h1 style="font-size:22px" class="scroll-reveal-paragraph">
+                                        <h1 style="font-size:28px" class="scroll-reveal-title"> <br>Hello, I'm Parsa!
+                                        </h1><font color="#FAFAFA">A computer science undergraduate student at University of California, Riverside.</font>
+                                    </h1> -->
+
+
+        <ul class="home-social"> <!-- start home-social icons -->
+            <li>
+                <a href="https://www.linkedin.com/in/parsa-salahshori-a-872b0b1a6><i
+                        class="im im-linkedin zoom" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+
+            <li>
+                <a href="https://github.com/parsasalahshori"><i class="im im-github zoom"
+                        aria-hidden="true"></i><span>Github</span></a>
+            </li>
+
+            <!-- Add CodePen icon link too!-->
+
+            <li>
+                <a href="mailto:parsa.halo123@gmail.com><i class="im im-mail zoom"
+                        aria-hidden="true"></i><span>Email</span></a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/"><i class="im im-facebook zoom" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+        </ul> <!-- end home-social -->
+
+    </section> 
+<!-- end of Home-->
+
+
+<!-- ABOUT ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3 class = "scroll-reveal-title">About</h3>
+                <h1 class = "scroll-reveal-title">An introduction about me.</h1>
+            </div>
+        </div>
+
+
+        <div class="row narrow about-content">
+            <div class="col-full">
+
+                <p class = "scroll-reveal-paragraph"> A determined student studying Computer Science at Irvine Valley College looking to transfer in pursuit of a B.S. in
+                Computer Science. I am constantly seeking opportunities to apply and leverage my skillset in the field of software
+                development. I am positive that I will provide meaningful contributions in all environments, particularly collaborative
+                ones. Feel free to reach out if anything interests you. </p>
+                
+        
+
+            
+            </div>
+        </div>
+
+        <!-- SKILLS ICON SECTION in ABOUT tab-->
+        <div class="skill-section">
+
+            <div class="col-full text-center scroll-reveal-title">
+                <h4> My Tech Stack</h4>
+            </div>
+
+
+            <div class="skills-container">
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/icons8-c++.svg" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">C++</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/icons8-python.svg" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">Python</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+                <div class="zoom">
+                    <div class="skill-card scroll-reveal-paragraph">
+                        <img src="icons/icons8-git.svg" class="skill-img" alt="">
+                        <h1 class="skill-name scroll-reveal-paragraph">Git</h1>
+                        <p class="skill-info"> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row about-content about-content--buttons">
+
+            <div class="col-six tab-full scroll-reveal-paragraph">
+                <div class="zoom-button">
+                    <a href="/resume.pdf" class="btn btn--primary full-width" download>Download My Résumé</a>
+                </div>
+            </div>
+
+            <div class="col-six tab-full scroll-reveal-paragraph">
+                <div class="zoom-button">
+                    <a href="mailto: parsa.halo123@gmail.com" class="btn btn--primary full-width">Let's connect</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<!-- end ABOUT-section -->
+
+
+<!-- WORKEXPERIENCE SECTION (left and right sections)-->
+    <section id="experience" class="s-about-experience target-section">
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full text-center">
+                <h3 class = "scroll-reveal-title">Experience</h3>
+                <h1 class = "scroll-reveal-title">Timeline of my professional experiences.</h1>
+            </div>
+        </div>
+
+
+        <div class = "timeline-wrap"></div>
+            <div class="row about-content-experience about-content--timeline">
+            <div class="col"></div>
+
+            <div class="col-4 tab-full">
+                <div class="timeline">
+
+                    <!-- EXPERIENCE - Farmers & Merchants Bank -->
+                    <div class="timeline__block scroll-reveal-experience">
+                        <div class="timeline__bullet scroll-reveal-paragraph"></div>
+
+                        <div class="timeline__header scroll-reveal-paragraph">
+                            <div class = "scroll-reveal-paragraph"> 
+                                <p class="timeline__timeframe">Jun 2022 - Aug 2022</p>
+                                <h3 class>Advanced Metal Processor Intern</h3>
+                                <h5 href="http://www.appliedmedical.com" target="_blank">Applied Medical</h5>
+                            </div>
+                        </div>
+
+                        <div class="timeline__desc scroll-reveal-paragraph">
+                            <p>◦ 
+                                <br>◦ 
+                                <br>
+                                <br>
+                                <a href="" target="_blank">Applied Medical</a>
+
+                            </p>
+                        </div>
+                    </div> <!-- Work -->
+
+                    <br>
+                    <br>
+
+
+        <div class="col"></div>
+
+    </section> 
+<!-- END OF WORK EXPERIENCE -->
+
+
+
+
+
+<!--======= PROJECTS section ======================================= -->
+    <section id="blog" class="s-blog target-section">
+
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3 class = "xscroll-reveal-title">Projects</h3>
+                <h1 class = "scroll-reveal-title">Projects I have developed.</h1>
+                <p class="lead scroll-reveal-paragraph">Visit my GitHub for my latest computer science software projects and collaborations.
+                </p>
+            </div>
+        </div>
+
+        <!-- start of a project article -->
+        <div class="row blog-content">
+            <div class="col-full">
+                <div class="blog-list block-1-2 block-tab-full">
+
+
+
+                <!-- Image Enhancer Upscaler -->
+                <article class="col-block slide-left">
+                    <div class="blog-date">
+                        <a href="">January – Present 2022</a>
+                    </div>
+                
+                    <h2 class="h01 scroll-reveal-paragraph"><a href="" target="_blank">Portfolio</a>
+                    </h2>
+                    <p class="scroll-reveal-paragraph"><a href=""> <br></a>
+                        <br>
+                        
+                         </br>
+                    </p>
+                
+                    <div class="scroll-reveal-project">
+                        <a class="project-example" href="">
+                            <img src="images/portfolio/projects/.png" alt=" " class="img-fluid">
+                        </a>
+                    </div>
+                </article>
+
+
+                </div> <!-- end project-list -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end projects-content -->
+
+    </section> 
+    <!-- end PROJECTS-->
+
+
+
+    <!--STATS NUMBER COUNT animation -->
+    <section id="stats" class="s-stats">
+        <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
+
+            <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    2024
+                </div>
+                <h4>Transfer</h4>
+            </div>
+
+            <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    20
+                </div>
+                <h4>GitHub Commits</h4>
+            </div>
+
+            <div class="col-block stats__col scroll-reveal-stats">
+                <div class="stats__count">
+                    2
+                </div>
+                <h4>Projects this year</h4>
+            </div>
+
+        </div>
+    </section>
+    <!-- end STATS -->
+
+
+    <!--===== CONTACT section ======================== -->
+    <section id="contact" class="s-contact page-hero target-section" data-parallax="scroll"
+        data-image-src="images/contact-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="top">
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class=data-image-src="images/contact-bg.jpg">
+   
+
+            <div class="row narrow section-intro">
+                <div class="col-full">
+                    <br>
+                    <h3 class="scroll-reveal-title">Contact</h3>
+                    <h1 class="scroll-reveal-title">Let's connect.</h1>
+
+                    <p class="lead scroll-reveal-paragraph">
+                        <font color="#f1f1f1">If anything here interests you, feel free to reach out. I am open to talk about anything.
+                        </font>
+                    </p>
+
+                </div>
+            </div>
+
+       
+
+            <div class="row contact__main">
+
+                <div class="col-eight tab-full contact__form scroll-reveal-contact">
+                    <form name="contactForm" id="contactForm" method="post" action="">
+                        <fieldset>
+
+                            <div class="form-field scroll-reveal">
+                                <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+                                    minlength="2" required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                                    required="" aria-required="true" class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                                    class="full-width">
+                            </div>
+                            <div class="form-field scroll-reveal">
+                                <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="8" cols="50"
+                                    required="" aria-required="true" class="full-width"></textarea>
+                            </div>
+
+                            <div class="form-field scroll-reveal-contact">
+                                <button class="full-width btn--primary">Submit</button>
+                                <div class="submit-loader">
+                                    <div class="text-loader">Sending...</div>
+                                    <div class="s-loader">
+                                        <div class="bounce1"></div>
+                                        <div class="bounce2"></div>
+                                        <div class="bounce3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <!-- contact-warning -->
+                    <div class="message-warning">
+                        Something went wrong. Please try again.
+                    </div>
+
+                    <!-- contact-success -->
+                    <div class="message-success">
+                        Your message was sent, thank you!<br>
+                    </div>
+
+                </div>
+
+
+                <div class="col-four tab-full contact__infos">
+                    <h4 class="h06m scroll-reveal-contact">Phone</h4>
+                    <p> <a href="tel:9498422889">
+                            <font color="#FFFFFF">949.XXX.2889</font> <br>
+                        </a>
+                    </p>
+
+                    <h4 class="h06 scroll-reveal-contact">Email</h4>
+                    <p> <a href="mailto: me@Parsahnguyen.com">
+                            <font color="#FFFFFF">me@parsa.com</font> <br>
+                        </a>
+                    </p>
+
+                    <h4 class="h06 scroll-reveal-contact">Location</h4>
+                    <p>
+                        <font color="#FFFFFF">Irvine, California</font>
+                    </p>
+                </div>
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+
+
+
+    <!-- footer ============= -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                   <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="images/logo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+
+                    <li><a href="https://www.linkedin.com/in/Parsahnguyen/" target="_blank">
+                            <i class="im im-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+
+                    <li><a href="https://github.com/thedigitalchief" target="_blank">
+                            <i class="im im-github" aria-hidden="true"></i>
+                            <span>Github</span>
+                        </a></li>
+
+                    <li><a href="https://www.facebook.com/Parsanguyenn/" target="_blank">
+                            <i class="im im-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a></li>
+                    <!-- <li><a href="#">
+                            <i class="im im-twitter" aria-hidden="true"></i>
+                            <span>Twitter</span>
+                        </a></li> <li><a href="#0">
+                            <i class="im im-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a></li> <li><a href="#0">
+                            <i class="im im-pinterest" aria-hidden="true"></i>
+                            <span>Pinterest</span>
+                        </a></li> -->
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>Copyright © 2022. All rights reserved.</span>
+                    <span>Developed by <a href="https://parsa.com">Parsa Salahshori-a</a></span>
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div> <!-- end footer-bottom -->
+
+    </footer> 
+<!-- end footer -->
+
+    <!-- photoswipe background animation ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button
+                    class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end photoSwipe background -->
+
+    <!--preloader -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- JSX -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script>
+        ScrollReveal().reveal('.scroll-reveal', {
+        distance: '15px',
+        duration: 950,
+        easing: 'ease',
+        mobile: true,
+        origin: 'top',
+        reset: true,
+        viewFactor: 0.25,
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-experience', {
+        duration: 950,
+        scale: 1,
+        mobile: true,
+        distance: '20px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-project', {
+        duration: 900,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease',
+        viewFactor: 0.2,
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-title', {
+        duration: 1100,
+        scale: 1,
+        mobile: true,
+        distance: '20px',
+        origin: 'bottom',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-paragraph', {
+        duration: 1000,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease',
+        viewFactor: 0.2,
+        
+        });
+        
+        
+        ScrollReveal().reveal('.scroll-reveal-pic', {
+        duration: 1000,
+        scale: 1,
+        mobile: true,
+        distance: '12px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease',
+        viewFactor: 0.2,
+        
+        });
+        
+        ScrollReveal().reveal('.scroll-reveal-contact', {
+        duration: 1300,
+        scale: 1,
+        mobile: true,
+        distance: '15px',
+        origin: 'top',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.25,
+        });
+        
+        
+        ScrollReveal().reveal('.scroll-reveal-stats', {
+        duration: 1300,
+        scale: 1,
+        mobile: true,
+        distance: '80px',
+        origin: 'bottom',
+        reset: false,
+        easing: 'ease-in',
+        viewFactor: 0.3,
+        });
+        
+        ScrollReveal().reveal(".slide-right", {
+        duration: 1300,
+        origin: "top",
+        mobile: true,
+        distance: "5px",
+        easing: "ease",
+        reset: false,
+        viewFactor: 0.25,
+        });
+        
+        ScrollReveal().reveal(".slide-left", {
+        duration: 1300,
+        origin: "top",
+        mobile: true,
+        distance: "5px",
+        easing: "ease",
+        reset: false,
+        viewFactor: 0.25,
+        });
+        </script>
+
+
+    <script> 
+        var _CONTENT = [
+            "Welcome! I'm Parsa...", 
+            "A computer science undergraduate...",
+            "A full-stack software developer...",
+            "A cyber-security intern...",
+            "An open source contributer...",
+            "A colloborative learner..."
+        ];
+
+        // Current sentence being processed
+        var _PART = 0;
+
+        // Character number of the current sentence being processed
+        var _PART_INDEX = 0;
+
+        // Holds the handle returned from setInterval
+        var _INTERVAL_VAL;
+
+        // Element that holds the text
+        var _ELEMENT = document.querySelector("#text");
+
+        // Cursor element
+        var _CURSOR = document.querySelector("#cursor");
+
+        // Implements typing effect
+        function Type() {
+            // Get substring with 1 characater added
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if (text === _CONTENT[_PART]) {
+                // Hide the cursor
+                _CURSOR.style.display = 'none';
+
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Delete, 100);
+                }, 1000);
+            }
+        }
+
+        // Implements deleting effect
+        function Delete() {
+            // Get substring with 1 characater deleted
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if (text === '') {
+                clearInterval(_INTERVAL_VAL);
+
+                // If current sentence was last then display the first one, else move to the next
+                if (_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+
+                _PART_INDEX = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function () {
+                    _CURSOR.style.display = 'inline-block';
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+
+        // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 200);
+
+    </script>
+
+
+</body>
+
+</html>
